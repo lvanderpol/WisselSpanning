@@ -12,9 +12,10 @@ function draw(){
 	if (x < 20) {
 		x = width,
 	}
-	y= x*0,2;
+	stroke(50);
+	point(x, 30);
+	point(50,100);
 
-	point(x, y);
 }
 
 
