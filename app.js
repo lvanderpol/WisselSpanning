@@ -1,20 +1,25 @@
+let x = 20;
+let y = 0;
+
 function setup(){
 	createCanvas(720,400);
-	stroke(0);
 	frameRate(30);
+	background(255);	
+
+	strokeWeight(3);
 }
 
 function draw(){
-	background(255);	
+	stroke(0);
 	line(0,height/2, width, height/2);	
 	line(20,height, 20, 0);
-	x= x -1;
+	x = x -1;
 	if (x < 20) {
-		x = width,
+		x = width;
 	}
-	stroke(50);
-	point(x, 30);
-	point(50,100);
+	stroke(255, 204, 0);
+	 y = y* cos(PI * x);
+	point (x, y);
 
 }
 
